@@ -32,7 +32,7 @@ const ambientes = [
     categoria: "Laboratórios",
     titulo: "Laboratório de Química",
     descricao: "Espaço de análise e experimentos químicos com equipamentos especializados e área de segurança adequada.",
-    imagemPreview: "#",
+    imagemPreview: "https://res.cloudinary.com/duay00cii/image/upload/v1778528503/lab-quimica_wajwg6.jpg",
     imagem360: "https://res.cloudinary.com/duay00cii/image/upload/v1771597659/lab-quimica-360_stjx7f.jpg",
     disponivel: true,
     dataAdicao: "2025-02-01"
@@ -42,7 +42,7 @@ const ambientes = [
     categoria: "Laboratórios",
     titulo: "Laboratório de Práticas Pedagógicas",
     descricao: "Ambiente para desenvolvimento de metodologias educacionais, pesquisa em ensino e preparação de materiais didáticos.",
-    imagemPreview: "#",
+    imagemPreview: "https://res.cloudinary.com/duay00cii/image/upload/v1778528503/lab-praticas_fnlvb5.jpg",
     imagem360: "https://res.cloudinary.com/duay00cii/image/upload/v1771597658/lab-pedagogia-360_bum2on.jpg",
     disponivel: true,
     dataAdicao: "2025-02-01"
@@ -114,7 +114,7 @@ const ambientes = [
     categoria: "Salas de Aula",
     titulo: "Sala de Aula - Bloco D",
     descricao: "Sala de aula equipada com tecnologia audiovisual moderna para aulas teóricas e apresentações.",
-    imagemPreview: "#",
+    imagemPreview: "https://res.cloudinary.com/duay00cii/image/upload/v1778528543/sala-d_w5ef6o.jpg",
     imagem360: "https://res.cloudinary.com/duay00cii/image/upload/v1771597664/sala-bloco-d-360_f5oeco.jpg",
     disponivel: true,
     dataAdicao: "2025-01-15"
@@ -124,7 +124,7 @@ const ambientes = [
     categoria: "Salas de Aula",
     titulo: "Sala de Aula - Bloco E",
     descricao: "Sala de aula equipada com tecnologia audiovisual moderna para aulas teóricas e apresentações.",
-    imagemPreview: "#",
+    imagemPreview: "https://res.cloudinary.com/duay00cii/image/upload/v1778528543/sala-e_u6ulsw.jpg",
     imagem360: "https://res.cloudinary.com/duay00cii/image/upload/v1771597665/sala-bloco-e-360_mcapwb.jpg",
     disponivel: true,
     dataAdicao: "2025-01-15"
@@ -290,7 +290,7 @@ const ambientes = [
     categoria: "Núcleo Esportivo",
     titulo: "Academia de Musculação",
     descricao: "Espaço equipado com máquinas e pesos para prática de musculação e treinamento resistido.",
-    imagemPreview: "#",
+    imagemPreview: "https://res.cloudinary.com/duay00cii/image/upload/v1778528544/academia_rsdwyc.jpg",
     imagem360: "https://res.cloudinary.com/duay00cii/image/upload/v1771597644/academia-musculacao-360_yxmi9b.jpg",
     disponivel: true,
     dataAdicao: "2025-02-20"
@@ -352,7 +352,7 @@ const ambientes = [
     categoria: "Espaços Comuns",
     titulo: "Centro de Vivências",
     descricao: "Espaço para realização de eventos, atividades culturais e de integração da comunidade acadêmica.",
-    imagemPreview: "#",
+    imagemPreview: "https://res.cloudinary.com/duay00cii/image/upload/v1778528506/centro-vivencias_qt36se.jpg",
     imagem360: "https://res.cloudinary.com/duay00cii/image/upload/v1771597658/centro-vivencias-360_gle1yq.jpg",
     disponivel: true,
     dataAdicao: "2025-02-25"
