@@ -335,7 +335,7 @@
             <!-- Posicionado à direita/lado para não interferir com menu -->
             <a-entity id="hotspot-voltar" position="2 0 -2" visible="false">
                 <!-- Bola pequena clicável -->
-                <a-sphere id="hotspot-bola" class="hotspot" radius="0.25" position="0 0 0" material="color: #DC2626; opacity: 0.95; shader: standard" clickable
+                <a-sphere id="hotspot-bola" class="hotspot" radius="0.25" position="0 0 0" material="color: #DC2626; opacity: 0.95; shader: standard" clickable data-action="sair-vr"
                     animation__pulse="property: scale; dir: alternate; dur: 1200; loop: true; to: 1.12"/>
 
                 <!-- Ícone de seta dentro da esfera (text colocado levemente à frente) -->
@@ -343,7 +343,7 @@
 
                 <!-- Texto 'Voltar' abaixo da esfera (interativo separado) -->
                 <!-- Fundo semitransparente para melhorar legibilidade do rótulo -->
-                <a-plane id="hotspot-label-bg" position="0 -0.6 0.02" width="1.4" height="0.36" color="#000000" opacity="0.45" material="shader: flat"></a-plane>
+                <a-plane id="hotspot-label-bg" class="hotspot" position="0 -0.6 0.02" width="1.4" height="0.36" color="#000000" opacity="0.45" material="shader: flat" clickable data-action="sair-vr"></a-plane>
                 <!-- Rótulo reduzido e com fonte branca para melhor legibilidade -->
                 <a-text id="hotspot-label" value="Voltar" position="0 -0.6 0.03" align="center" color="#FFFFFF" scale="0.6 0.6 0.6" width="2" wrap-count="12"></a-text>
             </a-entity>
@@ -733,6 +733,22 @@
             
             if (cmd === 'toggle-vr-menu') {
                 toggleVrMenu();
+            } else if (cmd === 'sair-vr') {
+                const sceneEl = document.querySelector('a-scene');
+                if (sceneEl && sceneEl.exitVR) {
+                    sceneEl.exitVR();
+                    mostrarNotificacao('Saindo do modo VR...', 'info', 2000);
+                }
+            } else if (cmd === 'voltar-para-campus') {
+                if (modoVRAtivo) {
+                    const sceneEl = document.querySelector('a-scene');
+                    if (sceneEl && sceneEl.exitVR) {
+                        sceneEl.exitVR();
+                        setTimeout(() => voltarParaCampus(), 300);
+                        return;
+                    }
+                }
+                voltarParaCampus();
             } else if (cmd === 'vr-show-ambientes' && payload) {
                 vrMenuStack.push({ type: 'categories', page: vrMenuPageIndex });
                 vrMenuPageIndex = 0;
