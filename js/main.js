@@ -418,8 +418,12 @@ function openTab(evt, tabName, focusTabs = false) {
   }
 }
 
-function copiarEmail() {
-  copiarParaAreaTransferencia('tiagocardoso1357@gmail.com');
+function copiarEmail(email) {
+  if (!email) {
+    mostrarNotificacao('E-mail não informado para cópia.', 'error');
+    return;
+  }
+  copiarParaAreaTransferencia(email);
 }
 
 /**

@@ -45,15 +45,17 @@ immersif-ceres/
 ├── package.json           # Metadados do projeto
 ├── README.md              # Documentação do projeto
 ├── css/
-│   └── style.css          # Estilos principais do site
+│   ├── style.css          # Estilos principais do site
+│   └── viewer.css         # Estilos do visualizador 360°
 ├── js/
-│   └── main.js            # Lógica interativa do site
+│   ├── main.js            # Lógica interativa do site
+│   └── viewer.js          # Lógica do visualizador 360°
 ├── data/
 │   └── ambientes.js       # Dados dos ambientes do campus
 └── .gitignore             # Arquivos ignorados pelo Git
 ```
 
-> Nota: existem arquivos adicionais na raiz (`script.js`, `style.css`) mas o site atual usa os arquivos em `js/main.js` e `css/style.css`.
+> Nota: o projeto usa `js/main.js`, `js/viewer.js` e os estilos externos `css/style.css` e `css/viewer.css`.
 
 ## 🚀 Execução local
 
