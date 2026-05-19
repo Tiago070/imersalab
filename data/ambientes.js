@@ -82,7 +82,7 @@ const ambientes = [
     categoria: "Laboratórios",
     titulo: "LABAM",
     descricao: "Laboratório de Análises Biogeoquímicas e Ambientais para estudos ambientais e pesquisa aplicada.",
-    imagemPreview: "#",
+    imagemPreview: "https://res.cloudinary.com/duay00cii/image/upload/v1779195201/Captura_de_tela_2026-05-19_095142_zssfe5.png",
     imagem360: "https://res.cloudinary.com/duay00cii/image/upload/v1771597659/labam-360_nzri3e.jpg",
     disponivel: true,
     dataAdicao: "2025-02-05"
@@ -92,7 +92,7 @@ const ambientes = [
     categoria: "Laboratórios",
     titulo: "LIMBIO",
     descricao: "Laboratório de Interações Microbianas e Biotecnologia para análises microbiológicas e pesquisa em ciências biológicas.",
-    imagemPreview: "#",
+    imagemPreview: "https://res.cloudinary.com/duay00cii/image/upload/v1779195201/Captura_de_tela_2026-05-19_095215_swocpu.png",
     imagem360: "https://res.cloudinary.com/duay00cii/image/upload/v1771597660/limbio-360_oupwwd.jpg",
     disponivel: true,
     dataAdicao: "2025-02-05"
