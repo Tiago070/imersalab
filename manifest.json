@@ -1,6 +1,6 @@
 {
-  "name": "ImmersIF - Tecnologias Imersivas para Divulgação Científica",
-  "short_name": "ImmersIF",
+  "name": "ImersaLab - Tecnologias Imersivas para Divulgação Científica",
+  "short_name": "ImersaLab",
   "description": "Explore virtualmente os ambientes do IF Goiano - Campus Ceres por meio de tours em 360° e realidade virtual",
   "scope": "/",
   "start_url": "/index.html",

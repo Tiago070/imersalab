@@ -1,5 +1,5 @@
 {
-  "name": "immersif-ceres",
+  "name": "imersalab",
   "version": "1.0.0",
   "description": "Tecnologias Imersivas para Divulgação Científica e Educacional - IF Goiano Campus Ceres",
   "main": "index.html",
@@ -23,12 +23,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/seu-usuario/immersif-ceres.git"
+    "url": "https://github.com/seu-usuario/imersalab.git"
   },
   "bugs": {
-    "url": "https://github.com/seu-usuario/immersif-ceres/issues"
+    "url": "https://github.com/seu-usuario/imersalab/issues"
   },
-  "homepage": "https://seu-usuario.github.io/immersif-ceres",
+  "homepage": "https://seu-usuario.github.io/imersalab",
   "devDependencies": {
     "http-server": "^14.1.1"
   }
