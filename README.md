@@ -1,6 +1,6 @@
 ﻿# ImersaLab
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://tiago070.github.io/immersif-ceres/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://tiago070.github.io/imersalab/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![License](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE-CC-BY-4.0)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
