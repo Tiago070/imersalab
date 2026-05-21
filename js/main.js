@@ -81,6 +81,14 @@ window.addEventListener('hashchange', marcarNavegacaoAtiva);
 
 let categoriaAmbienteSelecionada = 'todos';
 
+async function carregarAmbientesApiComCache() {
+  try {
+    await carregarAmbientesApi();
+  } catch (error) {
+    console.error('Erro ao carregar ambientes para o site:', error);
+  }
+}
+
 function initScrollSpy() {
   const sections = Array.from(document.querySelectorAll('main section[id]'));
   const navLinks = document.querySelectorAll('nav a');
@@ -178,7 +186,8 @@ function atualizarAmbientesFiltrados() {
   renderizarAmbientesPorCategoria(agrupados, 'ambientes-container');
 }
 
-function carregarAmbientesDisponiveis() {
+async function carregarAmbientesDisponiveis() {
+  await carregarAmbientesApiComCache();
   criarFiltrosAmbientes();
   atualizarAmbientesFiltrados();
 }
@@ -636,7 +645,7 @@ function initBackToTop() {
 /**
  * Inicializa todas as funcionalidades
  */
-function inicializarSite() {
+async function inicializarSite() {
   // Inicializar menu responsivo
   initMenuResponsivo();
 
@@ -662,7 +671,7 @@ function inicializarSite() {
   initBackToTop();
 
   // Carregar e renderizar os ambientes disponíveis na seção de tour
-  carregarAmbientesDisponiveis();
+  await carregarAmbientesDisponiveis();
 
   // Log de inicialização (para debug)
   console.log('Site ImersaLab iniciado com sucesso');
@@ -670,7 +679,7 @@ function inicializarSite() {
 
 // Aguardar carregamento do DOM
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', inicializarSite);
+  document.addEventListener('DOMContentLoaded', async () => { await inicializarSite(); });
 } else {
   inicializarSite();
 }

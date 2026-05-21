@@ -22,7 +22,9 @@ let ambienteAtual = null;
 /**
  * Inicializa o visualizador
  */
-function inicializarVisualizador() {
+async function inicializarVisualizador() {
+    await carregarAmbientesApi();
+
     // Obter ID do ambiente da URL
     const idAmbiente = obterParametroURL('id');
 
@@ -893,7 +895,7 @@ AFRAME.registerComponent('clickable', {
 });
 
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', inicializarVisualizador);
+    document.addEventListener('DOMContentLoaded', () => inicializarVisualizador());
 } else {
     inicializarVisualizador();
 }
