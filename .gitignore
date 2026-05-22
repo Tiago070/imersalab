@@ -18,12 +18,6 @@ Thumbs.db
 .env.local
 .env.*.local
 
-# Dependências e builds gerados
-/vendor/
-
-# Arquivos gerados pelo Docker/PHP
-docker/php/composer.lock
-
 # Compilações e Builds
 dist/
 build/
